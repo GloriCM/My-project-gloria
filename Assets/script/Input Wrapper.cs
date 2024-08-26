@@ -25,6 +25,11 @@ public class InputWrapper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(movementAction.ReadValue<float>());
+        
     }
+  public float GetMovement()
+  {
+    return movementAction.ReadValue<float>();
+  }
 }
+
